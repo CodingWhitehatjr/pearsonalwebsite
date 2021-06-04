@@ -3,17 +3,31 @@
 <head>
     <title> Thomas Maze Runner </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <center>
-        <ul class="menu">
-            <li class="links"><a href="#home"></a>Home</li>
-            <li class="links"><a href="#work">Work</a></li>
-            <li class="links"><a href="#Achivements">Achivements</a></li>
-            <li class="links"><a href="#videos">Videos</a></li>
-        </ul>
-    </center>
+    <nav class="navbar-inverse my_nav_bar" style="position:sticky;top:0;z-index:99999">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://codingwhitehatjr.github.io/pearsonalwebsite/">Pranati
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#home"></a>Home</li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#Achivements">Achivements</a></li>
+                <li><a href="#videos">Videos</a></li>
+            </ul>
+        </div>
+    </nav>
     <section id="welcome">
         <div class="brave">
             <img src="https://i.pinimg.com/originals/60/e0/45/60e0459555f68e90177f7ac4ef56a9fb.jpg" class="image" />
@@ -53,20 +67,31 @@
 
         </div> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48710.02752271072!2d-74.4941158!3d40.2673811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3d8d429afd00f%3A0xe71b5f2d7b319218!2sDunkin&#39;!5e0!3m2!1sen!2sus!4v1619991025149!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-        <div class="contact1">
+        <div class="contact1 col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <a href="mailto:my@gmail.com?Subject=hello"> <i class="anmela">
-                
-                </i>&nbsp;&nbsp;<h3>mymail</h3> 
-                
+
+                </i>&nbsp;&nbsp;<h3>mymail</h3>
+
 
             </a>
             <br>
             <br>
             <i class="anmela">
-            
+
             </i>&nbsp;&nbsp;<h3>instagram</h3>
-            
-            
+
+
+        </div>
+        <div class="contact2 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <form>
+                <span>Name:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="name" required>
+                <br>
+                <br>
+                <span >Comment:</span><input type="text" name="comment" required>
+                <br>
+                <br>
+                <input type="submit" value="submit" class="btn btn-success">
+            </form>
         </div>
 
     </section>
